@@ -1,0 +1,46 @@
+.k2000 {
+    height: 100px;
+    background: #000;
+    padding: 30px;
+}
+
+.k2000 > div {
+    background: radial-gradient(circle at 30% 30%, #fff, rgba(255, 255, 255, 0) 35%);
+    height: 40px;
+    width: 40px;
+    margin: 30px 0;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px red;
+    animation: k2000-movement 5s infinite cubic-bezier(.8, .2, .2, .8),
+                k2000-color 1s infinite;
+}
+
+@keyframes k2000-movement {
+    0% {
+        transform: none;
+    }
+
+    50% {
+        transform: translateX(calc(100vw - 116px)); /* ball width 40px + body margin 2 * 8px */
+    }
+
+    100% {
+        transform: none;
+    }
+}
+@keyframes k2000-color {
+    0% {
+        background-color: #f00;
+        box-shadow: 0 0 20px 10px red;
+    }
+
+    50% {
+        background-color: #00f;
+        box-shadow: 0 0 20px 10px blue;
+    }
+
+    100% {
+        background-color: #f00;
+        box-shadow: 0 0 20px 10px red;
+    }
+}
