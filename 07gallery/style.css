@@ -1,0 +1,23 @@
+.drop-zone {
+    width: 80%;
+    max-width: 1024px;
+    height: 20em;
+    margin: 0 auto;
+    border: 5px dashed black;
+    text-align: center;
+    line-height: 500px;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.gallery > * {
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: .5em;
+    margin: 1em;
+    text-align: center;
+}
