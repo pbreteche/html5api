@@ -1,0 +1,72 @@
+/**
+    Les jolies couleurs
+ */
+.header {
+    background: tomato;
+}
+
+.footer {
+    background: lightgreen;
+}
+
+.main {
+    text-align: left;
+    background: deepskyblue;
+}
+
+.aside-1 {
+    background: gold;
+}
+
+.aside-2 {
+    background: hotpink;
+}
+.wrapper {
+    display: grid;
+}
+
+.wrapper > * {
+    padding: 1em;
+}
+
+/**
+    Mise en page
+ */
+@media screen and (min-width: 720px) {
+    .wrapper {
+        grid-template-areas:
+                "header header"
+                "main main"
+                "aside1 aside2"
+                "footer footer";
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .aside-1 {
+        grid-area: aside1;
+    }
+
+    .aside-2 {
+        grid-area: aside2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        grid-template-areas:
+                "header header header"
+                "aside1 main aside2"
+                "footer footer footer";
+    }
+}

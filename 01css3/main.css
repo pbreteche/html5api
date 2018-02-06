@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/my-font.wotf");
+}
+
+p {
+    font-size: 1em;
+    line-height: 2em;
+    font-variant: titling-caps;
+    color: chocolate;
+    color: #123;
+    color: rgba(17, 34, 51, 1); /* hsla */
+    font-family: Roboto, sans-serif; /* serif, sans-serif, cursive, monospace, fantasy */
+    font-weight: 700;
+    font-style: oblique;
+    text-align: justify;
+    text-decoration: underline;
+    text-shadow: 0 0 1px red;
+    columns: 3;
+}
