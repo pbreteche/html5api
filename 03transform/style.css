@@ -1,0 +1,29 @@
+.element {
+    background-color: #0074d9;
+    height: 200px;
+    width: 200px;
+    font-size: 10px;
+    padding: 10px;
+    color: white;
+    line-height: 20px;
+    transition: all 1.5s;
+}
+.element:hover {
+    transform: rotate(720deg) scale(2) translateZ(10px);
+    background-color: red;
+}
+
+.aside {
+    height: 50px;
+    background-color: red;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
