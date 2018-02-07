@@ -11,10 +11,16 @@ export class Gallery {
         for (const [name, src] of this.data.entries()) {
             output += `<div>
 <img src="${src}" alt="${name}" height="120"/>
-<p>${name.replace(/\.[^/.]+$/, '')}</p>
+<p contenteditable="true">${name.replace(/\.[^/.]+$/, '')}</p>
 </div>`
         }
         this.element.innerHTML = output;
+        const names = this.element.querySelectorAll('p[contenteditable]');
+        for(const name of names) {
+            name.addEventListener('blur', (event) => {
+                console.log(event);
+            });
+        }
     }
 
 }
