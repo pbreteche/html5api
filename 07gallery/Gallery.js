@@ -7,6 +7,10 @@ export class Gallery {
 
     add(name, dataUri) {
         this.data.set(name, dataUri);
+        this.draw();
+    }
+
+    draw() {
         let output = '';
         for (const [name, src] of this.data.entries()) {
             output += `<div>
