@@ -1,0 +1,9 @@
+CACHE MANIFEST
+
+/css/style.css
+
+NETWORK:
+/index.html
+
+FALLBACK:
+/fallback.html
