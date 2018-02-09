@@ -33,7 +33,6 @@ export class BreakOutModel {
         this.board.speed = 5;
     }
 
-
     moveLeft() {
         this.board.speed = -5;
     }
